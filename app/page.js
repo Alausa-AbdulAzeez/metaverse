@@ -11,7 +11,7 @@ import {
 } from "../sections";
 
 const Page = () => (
-  <div>
+  <div className="bg-primary-black bg-pr">
     <Navbar />
     <Hero />
     <About />
