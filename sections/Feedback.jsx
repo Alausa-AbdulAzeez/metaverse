@@ -1,8 +1,10 @@
-/* eslint-disable @next/next/no-img-element */
 'use client'
 import { motion } from 'framer-motion'
 import styles from '@/styles'
 import { staggerContainer, fadeIn, zoomIn } from '@/utils/motion'
+import Image from 'next/image'
+import planet9 from '@/public/planet-09.png'
+import stamp from '@/public/stamp.png'
 
 const Feedback = () => (
   <section className={`${styles.paddings} relative z-10`}>
@@ -36,8 +38,8 @@ const Feedback = () => (
         variants={fadeIn('left', 'tween', 0.2, 1)}
         className='relative flex-1 flex justify-center items-center'
       >
-        <img
-          src='/planet-09.png'
+        <Image
+          src={planet9}
           alt='planet-09'
           className='w-full lg:h-[610px] h-auto min-h-[210px] object-cover rounded-[40px]'
         />
@@ -45,8 +47,8 @@ const Feedback = () => (
           variants={zoomIn(0.4, 1)}
           className='lg:block hidden absolute -left-[10%] top-[3%]'
         >
-          <img
-            src='/stamp.png'
+          <Image
+            src={stamp}
             alt='stamp'
             className='w-[155px] h-[155px] object-contain'
           />

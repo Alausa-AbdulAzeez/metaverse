@@ -1,10 +1,10 @@
-/* eslint-disable @next/next/no-img-element */
 'use client'
 import { motion } from 'framer-motion'
 import { startingFeatures } from '../constants'
 import { TitleText, TypingText, StartSteps } from '../components'
 import styles from '@/styles'
 import { staggerContainer, fadeIn, planetVariants } from '@/utils/motion'
+import Image from 'next/image'
 
 const GetStarted = () => {
   return (
@@ -20,10 +20,11 @@ const GetStarted = () => {
           variants={planetVariants('left')}
           className={`flex-1 ${styles.flexCenter}`}
         >
-          <img
+          <Image
             src='/get-started.png'
             alt='get-started'
             className='w-[90%] h-[90%] object-contain'
+            fill
           />
         </motion.div>
         <motion.div
