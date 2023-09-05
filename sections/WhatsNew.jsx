@@ -1,8 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
 'use client'
 import { motion } from 'framer-motion'
-import { newFeatures, startingFeatures } from '../constants'
-import { TitleText, TypingText, StartSteps, NewFeatures } from '../components'
+import { newFeatures } from '../constants'
+import { TitleText, TypingText, NewFeatures } from '../components'
 import styles from '@/styles'
 import { staggerContainer, fadeIn, planetVariants } from '@/utils/motion'
 
